@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-label="Cómo trabajo: datos primero con migraciones Alembic; pruebas automatizadas con Pytest, Vitest y GitHub Actions; despliegue con Docker, Nginx y systemd en Ubuntu; IA como apoyo con Claude Code y Codex.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050E24"/>
+      <stop offset="0.6" stop-color="#0B2A6B"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#93C5FD" stroke-opacity="0.08"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="340" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .sans { font-family: 'Segoe UI', Inter, 'Helvetica Neue', Arial, sans-serif; }
+    .mono { font-family: Consolas, 'SFMono-Regular', Menlo, 'Courier New', monospace; }
+    .in { animation: up .7s ease-out backwards; }
+    @keyframes up { from { opacity: 0; transform: translateY(12px); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+
+    .halo { transform-box: fill-box; transform-origin: center; animation: breathe 3s ease-in-out infinite; }
+    @keyframes breathe { 50% { transform: scale(1.12); } }
+  </style>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="340" fill="url(#bg)"/>
+    <rect width="1200" height="340" fill="url(#grid)"/>
+    <g class="in sans" style="animation-delay:0.10s">
+      <rect x="30" y="30" width="560" height="130" rx="14" fill="#050E24" fill-opacity=".45" stroke="#3B82F6" stroke-opacity=".45"/>
+      <circle class="halo" cx="82" cy="95" r="30" fill="url(#accent)" fill-opacity=".14" stroke="url(#accent)" stroke-width="1.5" style="animation-delay:0.0s"/>
+      <g transform="translate(82 95)" fill="none" stroke="#7DD3FC" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="0" cy="-9" rx="13" ry="5"/><path d="M-13 -9v18c0 2.8 5.8 5 13 5s13-2.2 13-5v-18M-13 0c0 2.8 5.8 5 13 5s13-2.2 13-5"/></g>
+      <text x="134" y="80" fill="#FFFFFF" font-size="22" font-weight="700">Datos primero</text>
+      <text fill="#C7D7F5" font-size="17"><tspan x="134" y="110">Diseño la base de datos de cada sistema y</tspan><tspan x="134" y="134">versiono sus cambios con migraciones (Alembic).</tspan></text>
+    </g>
+    <g class="in sans" style="animation-delay:0.25s">
+      <rect x="610" y="30" width="560" height="130" rx="14" fill="#050E24" fill-opacity=".45" stroke="#3B82F6" stroke-opacity=".45"/>
+      <circle class="halo" cx="662" cy="95" r="30" fill="url(#accent)" fill-opacity=".14" stroke="url(#accent)" stroke-width="1.5" style="animation-delay:0.6s"/>
+      <g transform="translate(662 95)" fill="none" stroke="#7DD3FC" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M-12 1l8 8 16-17"/></g>
+      <text x="714" y="80" fill="#FFFFFF" font-size="22" font-weight="700">Pruebas automatizadas</text>
+      <text fill="#C7D7F5" font-size="17"><tspan x="714" y="110">Escribo pruebas con Pytest y Vitest y las</tspan><tspan x="714" y="134">ejecuto en integración continua (GitHub Actions).</tspan></text>
+    </g>
+    <g class="in sans" style="animation-delay:0.40s">
+      <rect x="30" y="180" width="560" height="130" rx="14" fill="#050E24" fill-opacity=".45" stroke="#3B82F6" stroke-opacity=".45"/>
+      <circle class="halo" cx="82" cy="245" r="30" fill="url(#accent)" fill-opacity=".14" stroke="url(#accent)" stroke-width="1.5" style="animation-delay:1.2s"/>
+      <g transform="translate(82 245)" fill="none" stroke="#7DD3FC" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M0 12V-12M-10 -2L0 -12L10 -2"/><path d="M-14 15H14"/></g>
+      <text x="134" y="230" fill="#FFFFFF" font-size="22" font-weight="700">Despliegue propio</text>
+      <text fill="#C7D7F5" font-size="17"><tspan x="134" y="260">Despliego con Docker, Nginx y systemd en</tspan><tspan x="134" y="284">servidores Ubuntu, con respaldos automáticos.</tspan></text>
+    </g>
+    <g class="in sans" style="animation-delay:0.55s">
+      <rect x="610" y="180" width="560" height="130" rx="14" fill="#050E24" fill-opacity=".45" stroke="#3B82F6" stroke-opacity=".45"/>
+      <circle class="halo" cx="662" cy="245" r="30" fill="url(#accent)" fill-opacity=".14" stroke="url(#accent)" stroke-width="1.5" style="animation-delay:1.8s"/>
+      <g transform="translate(662 245)" fill="none" stroke="#7DD3FC" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M0 -14C1.5 -4 4 -1.5 14 0C4 1.5 1.5 4 0 14C-1.5 4 -4 1.5 -14 0C-4 -1.5 -1.5 -4 0 -14Z"/></g>
+      <text x="714" y="230" fill="#FFFFFF" font-size="22" font-weight="700">IA como apoyo</text>
+      <text fill="#C7D7F5" font-size="17"><tspan x="714" y="260">Uso agentes de IA (Claude Code, Codex) para</tspan><tspan x="714" y="284">agilizar el desarrollo, la revisión y las pruebas.</tspan></text>
+    </g>
+  </g>
+</svg>

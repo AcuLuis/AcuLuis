@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-label="Luis Antonio Acuña Ayala, Desarrollador Full Stack en TradeFood, Lima, Perú">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050E24"/>
+      <stop offset="0.55" stop-color="#0B2A6B"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <radialGradient id="orbA" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3B82F6" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbB" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#93C5FD" stroke-opacity="0.09" stroke-width="1"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="340" rx="20"/></clipPath>
+  </defs>
+
+  <style>
+    .sans { font-family: 'Segoe UI', Inter, 'Helvetica Neue', Arial, sans-serif; }
+    .grid { animation: drift 18s linear infinite; }
+    @keyframes drift { from { transform: translate(0, 0); } to { transform: translate(40px, 40px); } }
+    .orbA { animation: floatA 10s ease-in-out infinite; }
+    .orbB { animation: floatB 12s ease-in-out infinite; }
+    @keyframes floatA { 0%,100% { transform: translate(0,0); } 50% { transform: translate(40px,-25px); } }
+    @keyframes floatB { 0%,100% { transform: translate(0,0); } 50% { transform: translate(-35px,20px); } }
+
+    .in { animation: up .8s ease-out backwards; }
+    .d1 { animation-delay: .1s; } .d2 { animation-delay: .35s; } .d3 { animation-delay: .6s; }
+    .d4 { animation-delay: .9s; } .d5 { animation-delay: 1.1s; } .d6 { animation-delay: 1.3s; }
+    .d7 { animation-delay: 1.5s; } .d8 { animation-delay: 1.7s; } .d9 { animation-delay: 1.9s; }
+    @keyframes up { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+
+    .bar { transform-box: fill-box; transform-origin: left; animation: grow .9s .5s cubic-bezier(.2,.8,.2,1) backwards; }
+    @keyframes grow { from { transform: scaleX(0); } }
+
+    .role { animation: rotate 9s ease-in-out infinite both; }
+    .r2, .r3 { opacity: 0; }
+    .r2 { animation-delay: 3s; } .r3 { animation-delay: 6s; }
+    @keyframes rotate {
+      0% { opacity: 0; transform: translateY(10px); }
+      5%, 28% { opacity: 1; transform: translateY(0); }
+      33%, 100% { opacity: 0; transform: translateY(-10px); }
+    }
+
+    .dot { animation: pulse 2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    @keyframes pulse { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: .45; transform: scale(1.35); } }
+
+    .flow { stroke-dasharray: 6 7; animation: flow 1.2s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -26; } }
+
+    .node rect { fill: #0A1D4A; fill-opacity: .78; stroke: #3B82F6; stroke-width: 1.5; }
+    .node text { fill: #DBEAFE; font-size: 16px; font-weight: 600; }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="340" fill="url(#bg)"/>
+    <rect class="grid" x="-40" y="-40" width="1280" height="420" fill="url(#grid)"/>
+    <circle class="orbA" cx="980" cy="60" r="260" fill="url(#orbA)"/>
+    <circle class="orbB" cx="140" cy="330" r="220" fill="url(#orbB)"/>
+
+    <!-- ===== Texto ===== -->
+    <g class="sans">
+      <text class="in d1" x="70" y="92" fill="#93C5FD" font-size="16" font-weight="600" letter-spacing="4">DESARROLLADOR FULL STACK · TRADEFOOD</text>
+      <text class="in d2" x="68" y="158" fill="#FFFFFF" font-size="48" font-weight="700">Luis Antonio Acuña Ayala</text>
+      <rect class="bar" x="70" y="178" width="130" height="5" rx="2.5" fill="url(#accent)"/>
+
+      <text class="role r1" x="70" y="232" fill="#E0ECFF" font-size="24">Del modelo de datos al despliegue en Linux</text>
+      <text class="role r2" x="70" y="232" fill="#E0ECFF" font-size="24">Plataformas web · Escritorio · Android</text>
+      <text class="role r3" x="70" y="232" fill="#E0ECFF" font-size="24">FastAPI · Next.js · Kotlin · PostgreSQL</text>
+
+      <g class="in d4">
+        <rect x="70" y="262" width="150" height="36" rx="18" fill="#FFFFFF" fill-opacity=".08" stroke="#93C5FD" stroke-opacity=".35"/>
+        <circle class="dot" cx="92" cy="280" r="5" fill="#22D3EE"/>
+        <text x="106" y="286" fill="#DBEAFE" font-size="15" font-weight="600">Lima, Perú</text>
+      </g>
+      <g class="in d5">
+        <rect x="232" y="262" width="270" height="36" rx="18" fill="#FFFFFF" fill-opacity=".08" stroke="#93C5FD" stroke-opacity=".35"/>
+        <text x="252" y="286" fill="#DBEAFE" font-size="15" font-weight="600">Ing. de TI y Sistemas · ESAN</text>
+      </g>
+    </g>
+
+    <!-- ===== Diagrama full stack ===== -->
+    <g class="sans" fill="none">
+      <path class="flow" d="M930 98 H990" stroke="#60A5FA" stroke-width="2"/>
+      <path class="flow" d="M1060 120 C1060 145 845 140 845 168" stroke="#60A5FA" stroke-width="2"/>
+      <path class="flow" d="M1060 120 C1060 145 970 140 970 168" stroke="#60A5FA" stroke-width="2"/>
+      <path class="flow" d="M1060 120 C1060 145 1095 140 1095 168" stroke="#60A5FA" stroke-width="2"/>
+      <path class="flow" d="M845 212 V252 M970 212 V252 M1095 212 V252" stroke="#22D3EE" stroke-width="2"/>
+    </g>
+    <g class="sans" text-anchor="middle">
+      <g class="node in d3"><rect x="790" y="76" width="140" height="44" rx="10"/><text x="860" y="104">Base de datos</text></g>
+      <g class="node in d5"><rect x="990" y="76" width="140" height="44" rx="10"/><text x="1060" y="104">API · FastAPI</text></g>
+      <g class="node in d6"><rect x="790" y="168" width="110" height="44" rx="10"/><text x="845" y="196">Web</text></g>
+      <g class="node in d7"><rect x="915" y="168" width="110" height="44" rx="10"/><text x="970" y="196">Escritorio</text></g>
+      <g class="node in d8"><rect x="1040" y="168" width="110" height="44" rx="10"/><text x="1095" y="196">Android</text></g>
+      <g class="node in d9"><rect x="790" y="252" width="360" height="44" rx="10" style="stroke:#22D3EE"/><text x="970" y="280">Linux · Docker · Nginx</text></g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-label="Sobre mí: Desarrollador Full Stack en TradeFood, Lima, Perú. Ingeniería de TI y Sistemas en la Universidad ESAN con Beca 18. Construyo plataformas web, apps de escritorio y apps Android.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050E24"/>
+      <stop offset="0.6" stop-color="#0B2A6B"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#93C5FD" stroke-opacity="0.08"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="380" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .sans { font-family: 'Segoe UI', Inter, 'Helvetica Neue', Arial, sans-serif; }
+    .mono { font-family: Consolas, 'SFMono-Regular', Menlo, 'Courier New', monospace; }
+    .in { animation: up .7s ease-out backwards; }
+    @keyframes up { from { opacity: 0; transform: translateY(12px); } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+
+    .code text { font-size: 20px; }
+    .cursor { animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="380" fill="url(#bg)"/>
+    <rect width="1200" height="380" fill="url(#grid)"/>
+    <rect x="0" y="0" width="1200" height="52" fill="#050E24" fill-opacity=".55"/>
+    <circle cx="34" cy="26" r="7" fill="#F87171"/><circle cx="58" cy="26" r="7" fill="#FBBF24"/><circle cx="82" cy="26" r="7" fill="#34D399"/>
+    <text class="mono" x="600" y="32" fill="#93C5FD" font-size="16" text-anchor="middle">luis_acuna.py</text>
+    <g class="mono code">
+    <text class="in" x="0" y="100" style="animation-delay:0.30s"><tspan x="56" fill="#475569">1</tspan><tspan x="96" xml:space="preserve"><tspan fill="#C4B5FD">class </tspan><tspan fill="#FDE68A">LuisAcuna</tspan><tspan fill="#94A3B8">:</tspan></tspan></text>
+    <text class="in" x="0" y="134" style="animation-delay:0.48s"><tspan x="56" fill="#475569">2</tspan><tspan x="96" xml:space="preserve"><tspan fill="#E0ECFF">    rol         </tspan><tspan fill="#94A3B8">= </tspan><tspan fill="#7DD3FC">"Desarrollador Full Stack"</tspan></tspan></text>
+    <text class="in" x="0" y="168" style="animation-delay:0.66s"><tspan x="56" fill="#475569">3</tspan><tspan x="96" xml:space="preserve"><tspan fill="#E0ECFF">    empresa     </tspan><tspan fill="#94A3B8">= </tspan><tspan fill="#7DD3FC">"TradeFood"</tspan></tspan></text>
+    <text class="in" x="0" y="202" style="animation-delay:0.84s"><tspan x="56" fill="#475569">4</tspan><tspan x="96" xml:space="preserve"><tspan fill="#E0ECFF">    ubicacion   </tspan><tspan fill="#94A3B8">= </tspan><tspan fill="#7DD3FC">"Lima, Perú"</tspan></tspan></text>
+    <text class="in" x="0" y="236" style="animation-delay:1.02s"><tspan x="56" fill="#475569">5</tspan><tspan x="96" xml:space="preserve"><tspan fill="#E0ECFF">    formacion   </tspan><tspan fill="#94A3B8">= </tspan><tspan fill="#7DD3FC">"Ing. de TI y Sistemas · Universidad ESAN (Beca 18)"</tspan></tspan></text>
+    <text class="in" x="0" y="270" style="animation-delay:1.20s"><tspan x="56" fill="#475569">6</tspan><tspan x="96" xml:space="preserve"><tspan fill="#E0ECFF">    construyo   </tspan><tspan fill="#94A3B8">= </tspan><tspan fill="#94A3B8">[</tspan><tspan fill="#7DD3FC">"plataformas web"</tspan><tspan fill="#94A3B8">, </tspan><tspan fill="#7DD3FC">"apps de escritorio"</tspan><tspan fill="#94A3B8">, </tspan><tspan fill="#7DD3FC">"apps Android"</tspan><tspan fill="#94A3B8">]</tspan></tspan></text>
+    <text class="in" x="0" y="304" style="animation-delay:1.38s"><tspan x="56" fill="#475569">7</tspan><tspan x="96" xml:space="preserve"><tspan fill="#E0ECFF">    me_ocupo_de </tspan><tspan fill="#94A3B8">= </tspan><tspan fill="#94A3B8">[</tspan><tspan fill="#7DD3FC">"base de datos"</tspan><tspan fill="#94A3B8">, </tspan><tspan fill="#7DD3FC">"backend"</tspan><tspan fill="#94A3B8">, </tspan><tspan fill="#7DD3FC">"frontend"</tspan><tspan fill="#94A3B8">, </tspan><tspan fill="#7DD3FC">"despliegue"</tspan><tspan fill="#94A3B8">]</tspan></tspan></text>
+    </g>
+    <rect class="cursor mono" x="892" y="286" width="11" height="22" fill="#22D3EE"/>
+    <text class="mono" x="56" y="350" fill="#64748B" font-size="17"># contacto: linkedin.com/in/luis-acuna-dev · luisacudev@gmail.com</text>
+  </g>
+</svg>
